@@ -32,8 +32,8 @@ class MatchboardContainer extends StatelessWidget {
             height: 8.h,
           ),
           Text(
-            "live",
-            style: ThemeTextMedium.size14.copyWith(fontStyle: FontStyle.italic),
+            data.status,
+            style: ThemeTextMedium.size14.copyWith(fontStyle: FontStyle.italic, color: _getStatusColor(data.status)),
           ),
           SizedBox(
             height: 4.h,
@@ -52,6 +52,13 @@ class MatchboardContainer extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Color _getStatusColor(String status) {
+    if (status.toUpperCase() == "Live".toUpperCase()) {
+      return ThemeColors.orange;
+    }
+    return ThemeColors.gray4;
   }
 
   String _getDateFormat(String date) {

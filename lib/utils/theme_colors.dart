@@ -16,6 +16,8 @@ abstract class ThemeColors {
   //gray3
   static const gray3 = Color(0xFF535353);
 
+  //gray3
+  static const gray4 = Color(0xFFB9B9B9);
   //black
   static const black = Color(0xFF000000);
 
