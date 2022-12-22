@@ -1,16 +1,14 @@
 # test_project
 
-A new Flutter project.
 
-## Getting Started
+Использовал:
+ Bloc state managment
+ dio для запросов
+ json_serializable для генерации моделей
+ webview_flutter для вэб вью
 
-This project is a starting point for a Flutter application.
+"https://kueski.shop/cq1al3k.php?key=9ckcsrbnkseenkjkuh04" для основного апи (Убрал парамаетры как просили)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ "https://www.thesportsdb.com/api/v1/json/40130162/eventspastleague.php?id=4328" использовал  Last 15 Events by League в https://www.thesportsdb.com/api.php. 40130162 для патреон кода(вместо 2 в апи)
+  
+  
