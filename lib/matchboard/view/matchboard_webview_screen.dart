@@ -22,7 +22,14 @@ class MatchboardWebViewScreen extends StatelessWidget {
       ))
       ..loadHtmlString(args.htmlText, baseUrl: "https://www.thesportsdb.com");
     return WillPopScope(
-      onWillPop: () async => false,
+      onWillPop: () async {
+        if (await webViewController.canGoBack()) {
+          webViewController.goBack();
+          return false;
+        } else {
+          return false;
+        }
+      },
       child: Scaffold(
         body: Column(
           children: [
